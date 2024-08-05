@@ -1,0 +1,304 @@
+/*
+    Srinesh Selvaraj
+    4/19/2024
+    IT202-002
+    IT-202 Phase 5 Assignment: Read SQL Data with PHP and JavaScript
+    ss4872@njit.edu
+*/
+* {
+    font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+    font-size: 20px;
+    color: #F7F3E8;
+    background-color: #262D33;
+}
+#title{
+    margin: auto;
+    padding: 10px;
+    width: 50%;
+    background-color: #274560;
+    border-radius: 25px;
+}
+
+#title > *{
+    text-align:center;
+    background-color: #274560;
+}
+
+#title > h1 {
+    font-size: 36px;
+}
+
+figure {
+    display: inline-block;
+}
+
+figure img {
+    vertical-align: top;
+    width: 220px; 
+    height: 220px; 
+    position: relative;
+    border: solid 2px;
+    border-color: #21598B;
+}
+
+figure figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#images {
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px;
+}
+
+#header {
+    background-color: #0D67B5;
+    width: 100%;
+    margin: auto;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+}
+
+#header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float:right;
+}
+
+#header li{
+    float: left;
+}
+
+#header li a{
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    background-color: #0D67B5;
+}
+
+#header li a:hover{
+    background-color: #21598B;
+}
+
+#header li a:active{
+    background-color: #1F2B36;
+}
+
+#header > img {
+    float:left;
+    vertical-align: top;
+    width: 64px; 
+    height: 64px; 
+    position: relative;
+}
+
+
+#header #loggedin {
+    float:left;
+    margin-left:10px;
+    text-decoration: underline;
+    background-color: #0D67B5;
+}
+
+#footer {
+    background-color: #0D67B5;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+#footer p, a{
+    background-color: #0D67B5;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    float:left;
+}
+
+#footer a {
+    text-decoration: none;
+}
+
+#footer .contact {
+    float: right;
+}
+
+#shipping, #create, #login {
+    background-color: #274560;
+    width:50%;
+    margin:auto;
+    padding:30px;
+    border-radius: 20px;
+}
+
+#shipping > h2, #create > h2, #login > h2, #details > h2{
+    font-size: 28px;
+    background-color: #274560;
+    text-align: center;
+}
+form, label{
+    background-color: #274560;
+}
+
+input{
+    background-color: #262D33;
+}
+
+input, label{
+    display: block;
+    margin:auto;
+    width:100%;
+}
+.input{
+    width:100%;
+    margin:auto;
+    padding-bottom: 20px;
+    background-color: #274560;
+}
+
+.button{
+    margin-top:10px;
+    padding: 5px 5px;
+}
+
+.button:hover{
+    background-color: #1F2B36;
+}
+
+.button:active{
+    background-color: #21598B;
+}
+
+#error {
+    background-color: #274560;
+    color:red;
+    font-style:italic;
+    text-align: center;
+}
+
+#label {
+    background-color: #F7F3E8;
+    margin:auto;
+    width: 30%;
+    padding:20px;
+}
+
+#label p, #label figcaption{
+    background-color: #F7F3E8;
+    color:#1F2B36;
+    text-align: center;
+}
+
+#from{
+    background-color: #F7F3E8;
+    float:left;
+    width:50%;
+}
+
+#to{
+    background-color: #F7F3E8;
+    float: right;
+    width:50%;
+}
+
+#from > p, #to > p {
+    text-align: left;
+    padding-left:20px;
+}
+
+#label img {
+    width: 75%;
+    height: 25%;
+    display: block;
+    margin:auto;
+    border-color: #F7F3E8;
+}
+
+#label h2 {
+    font-size: 28px;
+    background-color: #F7F3E8;
+    color: #1F2B36;
+    text-align: center;
+}
+
+#label figure{
+    margin:auto;
+    width:100%;
+    background-color: #F7F3E8;
+}
+
+#products, #details{
+    background-color: #274560;
+    width:80%;
+    margin:auto;
+    padding:30px;
+    border-radius: 20px;
+}
+
+#products table, #details table{
+    background-color:#262D33;
+    margin:auto;
+    width:100%;
+    border:5px solid;
+    border-color:#1F2B36;
+    border-radius: 10px;
+}
+
+#products td, #products th, #details td, #details th{
+    background-color:#21598B;
+    text-align: center;
+    padding:10px;
+}
+
+#products h2{
+    background-color: #274560;
+    text-align: center;
+    font-size: 28px;
+    padding-top:20px;
+}
+#products h1{
+    background-color: #274560;
+    text-align: center;
+    font-size: 36px;
+}
+
+#category, #description{
+    width: 100%;
+}
+
+#created{
+    margin:auto;
+    text-align: center;
+}
+
+#product_details{
+    background-color: #21598B;
+    text-decoration: none;
+}
+
+#details_img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+}
+
+#product_details:hover{
+    background-color: #274560;
+}
+
+#product_details:active{
+    background-color: #1F2B36;
+}
