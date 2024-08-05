@@ -4,3 +4,4 @@ A website for a fictional store that can be used by both store owners and consum
 
 Made in Spring 2024 for NJIT's IT202 class.
  
+Added screenshots for now while I am working on hosting this website on the internet.
